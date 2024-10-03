@@ -5,35 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Pocket Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
 </head>
 <body>
     <h1>The Pocket Calculator</h1>
+    <p class="description">
+        This project features a simple calculator capable of performing basic addition, subtraction, multiplication and division.
+        <br><br>
+        Decimal representations are displayed to <strong>2 decimal places</strong>.
+    </p>
     <div class="calculator">
-        <p class="display">Screen</p>
+        <div class="display">
+            <p></p>
+        </div>
         <div class="buttons">
             <div class="row1">
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button id="plus">+</button>
+                <button class="number" id="seven">7</button>
+                <button class="number" id="eight">8</button>
+                <button class="number" id="nine">9</button>
+                <button class="operation" id="plus">+</button>
             </div>
             <div class="row2">
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
-                <button id="minus">-</button>
+                <button class="number" id="four">4</button>
+                <button class="number" id="five">5</button>
+                <button class="number" id="six">6</button>
+                <button class="operation" id="minus">-</button>
             </div>
             <div class="row3">
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
-                <button id="times">x</button>
+                <button class="number" id="one">1</button>
+                <button class="number" id="two">2</button>
+                <button class="number" id="three">3</button>
+                <button class="operation" id="times">×</button>
             </div>
             <div class="row4">
-                <button class="empty"></button>
-                <button id="zero">0</button>
-                <button class="empty"></button>
-                <button id="divide">/</button>
+                <button class="clear">AC</button>
+                <button class="number" id="zero">0</button>
+                <button class="equals">=</button>
+                <button class="operation" id="divide">÷</button>
             </div>
         </div>
     </div>
