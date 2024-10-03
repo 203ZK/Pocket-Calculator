@@ -38,7 +38,7 @@ function setEquals() {
         result = arg1 + arg2;
     } else if (op == "-") {
         result = arg1 - arg2;
-    } else if (op == "x") {
+    } else if (op == "×") {
         result = arg1 * arg2;
     } else {
         if (arg2 == 0) {
